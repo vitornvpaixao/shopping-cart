@@ -17,11 +17,10 @@ export interface IProduct {
 }
 
 export interface ICart {
-    items: ICartItem[],
+    readonly items: ICartItem[],
 }
 
 export interface ICartItem {
-    id: number,
     productId: number,
     quantity: number,
     timeStamp: Date,
